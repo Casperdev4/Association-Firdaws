@@ -2,7 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-    <!-- Page d'accueil -->
     <url>
         <loc>https://association-firdaws.fr</loc>
         <lastmod>2025-01-02</lastmod>
@@ -20,7 +19,6 @@
         </image:image>
     </url>
 
-    <!-- Page A propos -->
     <url>
         <loc>https://association-firdaws.fr/ong-musulmane-fiable.html</loc>
         <lastmod>2025-01-02</lastmod>
@@ -48,7 +46,6 @@
         </image:image>
     </url>
 
-    <!-- Page Distribution / Galerie -->
     <url>
         <loc>https://association-firdaws.fr/distribution-colis-alimentaire.html</loc>
         <lastmod>2025-01-02</lastmod>
@@ -76,7 +73,6 @@
         </image:image>
     </url>
 
-    <!-- Page Contact et Don -->
     <url>
         <loc>https://association-firdaws.fr/contact-don-alimentaire.html</loc>
         <lastmod>2025-01-02</lastmod>
@@ -89,7 +85,6 @@
         </image:image>
     </url>
 
-    <!-- Images des partenaires -->
     <url>
         <loc>https://association-firdaws.fr/privora.png</loc>
         <lastmod>2025-01-02</lastmod>
