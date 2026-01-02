@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+    <!-- Page d'accueil -->
+    <url>
+        <loc>https://association-firdaws.fr</loc>
+        <lastmod>2025-01-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/colis_alimentaire_91.webp</image:loc>
+            <image:caption>Distribution de colis alimentaires gratuits par l'association musulmane Firdaws 91 en Essonne.</image:caption>
+            <image:title>Colis alimentaire gratuit - Association musulmane humanitaire Essonne</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/logo.png</image:loc>
+            <image:caption>Logo officiel de l'Association Firdaws 91, ONG musulmane fiable en Essonne.</image:caption>
+            <image:title>Association musulmane Firdaws 91 - ONG humanitaire fiable</image:title>
+        </image:image>
+    </url>
+
+    <!-- Page A propos -->
+    <url>
+        <loc>https://association-firdaws.fr/ong-musulmane-fiable.html</loc>
+        <lastmod>2025-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/preparation-colis-alimentaire.webp</image:loc>
+            <image:caption>Preparation de colis alimentaires par les benevoles de l'association musulmane humanitaire Firdaws 91.</image:caption>
+            <image:title>Preparation colis alimentaire gratuit - Association musulmane</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/distribution-colis-alimentaires.jpg</image:loc>
+            <image:caption>Distribution de colis alimentaires aux familles dans le besoin par notre ONG musulmane fiable.</image:caption>
+            <image:title>Distribution colis alimentaires - ONG musulmane fiable</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/aide-alimentaire.jpeg</image:loc>
+            <image:caption>Aide alimentaire d'urgence proposee par l'association islamique Firdaws 91.</image:caption>
+            <image:title>Aide alimentaire urgence - Association islamique humanitaire</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/colis_alimentaire_91.webp</image:loc>
+            <image:caption>Colis alimentaire complet distribue par l'association humanitaire musulmane en Essonne.</image:caption>
+            <image:title>Colis alimentaire Essonne - Association humanitaire musulmane</image:title>
+        </image:image>
+    </url>
+
+    <!-- Page Distribution / Galerie -->
+    <url>
+        <loc>https://association-firdaws.fr/distribution-colis-alimentaire.html</loc>
+        <lastmod>2025-01-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/preparation-colis-alimentaire.webp</image:loc>
+            <image:caption>Preparation des colis alimentaires en ligne par notre association musulmane fiable.</image:caption>
+            <image:title>Colis alimentaire en ligne - Don nourriture</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/distribution-colis-alimentaires.jpg</image:loc>
+            <image:caption>Dons alimentaires aux associations - Distribution aux familles demunies.</image:caption>
+            <image:title>Dons alimentaires aux associations humanitaires</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/aide-alimentaire.jpeg</image:loc>
+            <image:caption>Don alimentaire par notre association musulmane - Aide alimentaire urgence.</image:caption>
+            <image:title>Don alimentaire association musulmane</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/colis_alimentaire_91.webp</image:loc>
+            <image:caption>Banque alimentaire don - Colis alimentaire Firdaws 91 en Essonne.</image:caption>
+            <image:title>Banque alimentaire don Firdaws 91</image:title>
+        </image:image>
+    </url>
+
+    <!-- Page Contact et Don -->
+    <url>
+        <loc>https://association-firdaws.fr/contact-don-alimentaire.html</loc>
+        <lastmod>2025-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/logo.png</image:loc>
+            <image:caption>Contactez l'association musulmane Firdaws 91 pour faire un don alimentaire ou devenir benevole.</image:caption>
+            <image:title>Contact don alimentaire - Association musulmane Firdaws 91</image:title>
+        </image:image>
+    </url>
+
+    <!-- Images des partenaires -->
+    <url>
+        <loc>https://association-firdaws.fr/privora.png</loc>
+        <lastmod>2025-01-02</lastmod>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/privora.png</image:loc>
+            <image:caption>Privora, partenaire de l'association musulmane humanitaire Firdaws 91.</image:caption>
+            <image:title>Privora - Partenaire association musulmane humanitaire</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://association-firdaws.fr/kazeko.png</loc>
+        <lastmod>2025-01-02</lastmod>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/kazeko.png</image:loc>
+            <image:caption>Kazeko, partenaire de l'ONG musulmane fiable Firdaws 91.</image:caption>
+            <image:title>Kazeko - Partenaire ONG musulmane fiable</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://association-firdaws.fr/asc-driver.png</loc>
+        <lastmod>2025-01-02</lastmod>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/asc-driver.png</image:loc>
+            <image:caption>ASC Driver, partenaire de l'association islamique Firdaws 91.</image:caption>
+            <image:title>ASC Driver - Partenaire association islamique</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://association-firdaws.fr/aquaserv.png</loc>
+        <lastmod>2025-01-02</lastmod>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/aquaserv.png</image:loc>
+            <image:caption>Aquaserv, partenaire pour les dons alimentaires de Firdaws 91.</image:caption>
+            <image:title>Aquaserv - Partenaire don alimentaire</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://association-firdaws.fr/webprime.png</loc>
+        <lastmod>2025-01-02</lastmod>
+        <image:image>
+            <image:loc>https://association-firdaws.fr/webprime.png</image:loc>
+            <image:caption>WebPrime, createur du site web de l'association humanitaire Firdaws 91.</image:caption>
+            <image:title>WebPrime - Partenaire association humanitaire</image:title>
+        </image:image>
+    </url>
+
+</urlset>
