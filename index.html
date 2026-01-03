@@ -405,18 +405,32 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" onsubmit="return submitToWebPrime(event)">
+                    <div class="hp-wrap">
+                        <label for="website2">Votre site web :</label>
+                        <input type="text" id="website2" name="_gotcha" autocomplete="off">
+                    </div>
+                    <input type="hidden" name="_captcha" value="true">
                     <div class="form-group">
-                        <input type="text" name="name" placeholder="Votre nom" required>
+                        <input type="text" name="nom" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="tel" placeholder="Votre téléphone" pattern="^((\+33|0)[1679])[0-9]{8}$" maxlength="12" required>
                     </div>
                     <div class="form-group">
                         <input type="email" name="email" placeholder="Votre email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="subject" placeholder="Sujet">
+                        <select name="services" required>
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="DON">Question sur les dons</option>
+                            <option value="AIDE">Demande d'aide</option>
+                            <option value="PARTENARIAT">Partenariat</option>
+                            <option value="AUTRE">Autre</option>
+                        </select>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+                        <textarea name="commentaires" placeholder="Votre message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Envoyer le message</button>
                 </form>
@@ -494,5 +508,39 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    async function submitToWebPrime(e) {
+        e.preventDefault();
+        const form = document.getElementById('contactForm');
+        const btn = form.querySelector('button[type="submit"]');
+        const originalText = btn.textContent;
+
+        if (form._gotcha && form._gotcha.value) return false;
+
+        btn.textContent = 'Envoi en cours...';
+        btn.disabled = true;
+
+        try {
+            const formData = new FormData(form);
+            const response = await fetch('https://webprime.app/webhook/contact/370642a7e8c7014e237cf576eb67623a3ca6bdbb1ef3a28f9c35cd472f55132e', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                window.location.href = 'https://association-firdaws.fr/';
+            } else {
+                alert('Erreur lors de l\'envoi. Veuillez reessayer.');
+                btn.textContent = originalText;
+                btn.disabled = false;
+            }
+        } catch (error) {
+            alert('Erreur de connexion. Veuillez reessayer.');
+            btn.textContent = originalText;
+            btn.disabled = false;
+        }
+        return false;
+    }
+    </script>
 </body>
 </html>

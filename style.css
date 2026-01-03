@@ -2404,3 +2404,12 @@ img {
         height: 18px;
     }
 }
+
+/* ===== Honeypot Anti-spam ===== */
+.hp-wrap {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
