@@ -1357,6 +1357,85 @@ img {
     border-color: var(--primary-color);
 }
 
+/* ===== CTA Entraide ===== */
+.cta-entraide {
+    padding: 80px 0;
+    background: var(--gray-light);
+}
+
+.cta-entraide-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.cta-entraide-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.cta-entraide-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.cta-entraide-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.cta-entraide-icon svg {
+    width: 40px;
+    height: 40px;
+    color: var(--white);
+}
+
+.cta-entraide-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+.cta-entraide-card p {
+    color: var(--text-light);
+    margin-bottom: 25px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.cta-entraide-card .btn {
+    min-width: 200px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .cta-entraide-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ===== Sponsors Section ===== */
 .sponsors {
     padding: 80px 0;
@@ -2259,6 +2338,51 @@ img {
 
     .form-row {
         grid-template-columns: 1fr;
+    }
+
+    /* Réduction marges sections mobile */
+    .services,
+    .about,
+    .donation,
+    .contact,
+    .sponsors,
+    .faq {
+        padding: 50px 0;
+    }
+
+    .cta-entraide {
+        padding: 50px 0;
+    }
+
+    .cta-entraide-card {
+        padding: 25px 20px;
+    }
+
+    .cta-entraide-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+
+    .cta-entraide-icon svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cta-banner {
+        padding: 40px 0;
+    }
+
+    .impact-section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        margin-bottom: 10px;
+    }
+
+    .section-subtitle {
+        margin-bottom: 25px;
     }
 }
 
