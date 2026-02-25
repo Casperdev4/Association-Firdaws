@@ -6,6 +6,12 @@
     <title>Entraide - Articles Gratuits | Association Firdaws 91</title>
     <meta name="description" content="Entraide solidaire de l'Association Firdaws 91. Recevez gratuitement des articles pour votre famille en Essonne.">
     <link rel="canonical" href="https://association-firdaws.fr/don-gratuit.html"/>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://association-firdaws.fr/don-gratuit.html">
+    <meta property="og:title" content="Entraide - Articles Gratuits | Association Firdaws 91">
+    <meta property="og:description" content="Entraide solidaire de l'Association Firdaws 91. Recevez gratuitement des articles pour votre famille en Essonne.">
+    <meta property="og:image" content="https://association-firdaws.fr/colis_alimentaire_91.webp">
+
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="apple-touch-icon" type="image/png" sizes="96x96" href="./logo/apple-icon-96x96.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./logo/android-icon-32x32.png">
@@ -678,7 +684,7 @@
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo" title="Association musulmane Firdaws 91">
-                <img src="logo.png" alt="Association Firdaws 91" class="logo-img">
+                <img loading="lazy" src="logo.png" alt="Association Firdaws 91" class="logo-img">
             </a>
             <nav class="nav" id="nav">
                 <ul class="nav-list">
@@ -933,7 +939,7 @@
             <div class="footer-grid">
                 <div class="footer-about">
                     <div class="footer-logo">
-                        <img src="logo.png" alt="Association Firdaws 91" class="footer-logo-img">
+                        <img loading="lazy" src="logo.png" alt="Association Firdaws 91" class="footer-logo-img">
                     </div>
                     <p>Association caritative dédiée à la distribution de colis alimentaires aux familles dans le besoin en Essonne.</p>
                 </div>
@@ -952,6 +958,9 @@
                     <p><strong>Téléphone :</strong> 07 49 34 09 33</p>
                     <p><strong>Email :</strong> contact.firdaws91@gmail.com</p>
                     <p><strong>Localisation :</strong> Essonne, France</p>
+                    <a href="https://www.instagram.com/firdaws91_?igsh=OXhjZ2N2NnpsaWg=" target="_blank" rel="noopener" title="Instagram Firdaws 91">
+                        <img src="instagram.png" alt="Instagram Firdaws 91" style="width:24px;height:24px;margin-top:10px;" loading="lazy">
+                    </a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -971,7 +980,7 @@
             </div>
             <div class="modal-body">
                 <div class="modal-item-preview" id="modalItemPreview">
-                    <img src="" alt="Article" id="modalItemImage">
+                    <img loading="lazy" src="" alt="Article" id="modalItemImage">
                     <div class="modal-item-info">
                         <h4 id="modalItemTitle"></h4>
                         <p id="modalItemCategory"></p>
@@ -1034,7 +1043,7 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script>
         // ============================================
         // CONFIGURATION GOOGLE SHEETS
@@ -1133,7 +1142,7 @@
                 card.dataset.itemId = index + 1;
 
                 card.innerHTML = `
-                    <img src="${photoUrl}" alt="${article.titre}" class="item-image" onerror="this.src='https://placehold.co/400x200/f5f5f5/666?text=Photo+Article'">
+                    <img loading="lazy" src="${photoUrl}" alt="${article.titre}" class="item-image" onerror="this.src='https://placehold.co/400x200/f5f5f5/666?text=Photo+Article'">
                     <div class="item-content">
                         <span class="item-category">${article.categorie}</span>
                         <h3 class="item-title">${article.titre}</h3>
