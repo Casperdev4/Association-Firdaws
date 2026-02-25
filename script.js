@@ -1,4 +1,4 @@
-// ===== Mobile Menu Toggle =====
+
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const nav = document.getElementById('nav');
 
@@ -8,7 +8,6 @@ mobileMenuBtn.addEventListener('click', () => {
     document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
 });
 
-// Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
         mobileMenuBtn.classList.remove('active');
@@ -17,7 +16,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// ===== Header Scroll Effect =====
 const header = document.querySelector('.header');
 let lastScroll = 0;
 
@@ -33,7 +31,6 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// ===== Active Navigation Link =====
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-link');
 
@@ -270,10 +267,11 @@ donationTypeButtons.forEach(btn => {
 
         isMonthly = btn.dataset.type === 'monthly';
 
-        // Update period text on cards
-        document.querySelectorAll('.amount-period').forEach(period => {
-            period.textContent = isMonthly ? '/mois' : 'unique';
-        });
+        // Show/hide amount cards for one-time donation
+        const amountSelection = document.querySelector('.donation-amounts');
+        const customAmountWrapper = document.querySelector('.custom-amount');
+        if (amountSelection) amountSelection.style.display = isMonthly ? '' : 'none';
+        if (customAmountWrapper) customAmountWrapper.style.display = 'none';
 
         // Update button text
         if (donateBtn) {
@@ -310,22 +308,34 @@ if (customAmountInput) {
     });
 }
 
+// Stripe monthly donation links
+const stripeMonthlyLinks = {
+    10: 'https://buy.stripe.com/bJebJ0699eaw4Az8Eh0Ny01',
+    30: 'https://buy.stripe.com/dRm7sK411giE6IH3jX0Ny00',
+    50: 'https://buy.stripe.com/dRmdR8555eaw1on6w90Ny02'
+};
+
+// Stripe free amount link (customer chooses amount)
+const stripeCustomLink = 'https://buy.stripe.com/3cIbJ0699feA5ED1bP0Ny03';
+
 // Donate button click
 if (donateBtn) {
     donateBtn.addEventListener('click', () => {
+        if (!isMonthly) {
+            window.location.href = stripeCustomLink;
+            return;
+        }
+
         if (selectedAmount < 1) {
             alert('Veuillez sélectionner un montant valide.');
             return;
         }
 
-        const donationType = isMonthly ? 'mensuel' : 'unique';
-
-        // Here you would integrate with Stripe or your payment system
-        // For now, show a confirmation message
-        alert(`Merci pour votre don ${donationType} de ${selectedAmount}€ !\n\nVous allez être redirigé vers la page de paiement sécurisé.`);
-
-        // Example: Redirect to payment page
-        // window.location.href = `/paiement?montant=${selectedAmount}&type=${donationType}`;
+        if (stripeMonthlyLinks[selectedAmount]) {
+            window.location.href = stripeMonthlyLinks[selectedAmount];
+        } else {
+            window.location.href = stripeCustomLink;
+        }
     });
 }
 
